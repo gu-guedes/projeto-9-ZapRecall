@@ -46,6 +46,7 @@ export default function Carta(props) {
 
                         }} src={icone}></img>}
                     </div>
+                    
 
 
             }

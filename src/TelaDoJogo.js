@@ -7,6 +7,9 @@ export default function TelaDoJogo() {
     const [botaoVermelho, setBotaoVermelho] = React.useState([])
     const [botaoLaranja, setBotaoLaranja] = React.useState([])
 
+    let concluidos = botaoVerde.length + botaoLaranja.length + botaoVermelho.length
+
+
     function alterarStatusVermelho() {
         if(cartaSelecionada.length !== 0 ){
 
@@ -26,6 +29,8 @@ export default function TelaDoJogo() {
         setBotaoVerde([... botaoVerde, cartaSelecionada[0]])
         setCartaSelecionada([])}
     }
+    
+    
 
     return (
         <>
@@ -35,7 +40,7 @@ export default function TelaDoJogo() {
                     <h1>ZapRecall</h1>
                 </div>
                 <ListaDeCartas cartaSelecionada={cartaSelecionada} setCartaSelecionada={setCartaSelecionada} botaoVerde={botaoVerde} botaoLaranja={botaoLaranja} botaoVermelho={botaoVermelho}/>
-                <BarraInferior alterarStatusVerde={alterarStatusVerde} alterarStatusLaranja={alterarStatusLaranja} alterarStatusVermelho={alterarStatusVermelho} />
+                <BarraInferior concluidos={concluidos} alterarStatusVerde={alterarStatusVerde} alterarStatusLaranja={alterarStatusLaranja} alterarStatusVermelho={alterarStatusVermelho} />
             </div>
 
         </>)
