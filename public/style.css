@@ -134,3 +134,6 @@ border: 1px solid #2FBE34;
   bottom: 10px;
   right: 10px;
 }
+.pergunta-nao-lembrei > p{
+ color: red;
+}

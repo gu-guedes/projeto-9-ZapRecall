@@ -3,9 +3,9 @@ export default function BarraInferior(props){
         <>
         <div className="footer-concluidos">
             <div className="container-botoes">
-                <button onClick={props.alterarStatus}>não lembrei</button>
-                <button onClick={props.alterarStatus}>quase não lembrei</button>
-                <button onClick={props.alterarStatus}>Zap!</button>
+                <button onClick={props.alterarStatusVermelho}>não lembrei</button>
+                <button onClick={props.alterarStatusLaranja}>quase não lembrei</button>
+                <button onClick={props.alterarStatusVerde}>Zap!</button>
             </div>
         </div>
         </>
