@@ -137,4 +137,15 @@ border: 1px solid #2FBE34;
 }
 .pergunta-nao-lembrei > p{
  color: red;
+ text-decoration: line-through;
 }
+.pergunta-certa > p{
+  color: green;
+ text-decoration: line-through;
+}
+.pergunta-quase > p{
+  color: orange;
+ text-decoration: line-through;
+}
+
+
