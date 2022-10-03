@@ -1,6 +1,4 @@
-/* import verde from "../img/icone_certo.png"
-import laranja from "./img/icone_quase.png"
-import vermelho from "./img/icone_erro.png" */
+
 import React from "react"
 
 export default function Carta(props) {
@@ -10,12 +8,6 @@ export default function Carta(props) {
     const [resposta, setResposta] = React.useState(false)
 
 
-
-    /*   console.log(props)
-      const [perguntas, setPerguntas] = React.useState(`Pergunta ${props.index + 1}`)
-      const [classe, setClasse] = React.useState('pergunta-fechada')
-      const [icone, setIcone] = React.useState("./img/seta_play.png") */
-
     return (
         <>
             {
@@ -24,7 +16,7 @@ export default function Carta(props) {
 
                     <div onClick={() => {
                         setResposta(true)
-                        console.log('chamou')
+                        
 
                     }} className="pergunta-aberta">
                         <p>{resposta ? props.carta.resposta : props.carta.questão}</p>
@@ -40,7 +32,6 @@ export default function Carta(props) {
                         props.botaoVermelho.includes(props.index) ?
                         <img src="./img/icone_erro.png"/> :
                         <img onClick={() => {
-                            console.log('chamou')
                             setPerguntaFechada(false)
                             props.setCartaSelecionada([props.index])
 
